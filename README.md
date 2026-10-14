@@ -19,7 +19,7 @@ components with Vite and Storybook.
 - A ServiceNow instance for full component previews. Configure either
   `SN_INSTANCE`, `SN_USER`, and `SN_PASS`, or an `snc` profile on macOS.
 
-## Getting started
+## Contributing
 
 Install dependencies from the workspace root:
 

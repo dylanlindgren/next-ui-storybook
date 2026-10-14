@@ -2,9 +2,15 @@
   "$schema": "https://unpkg.com/@changesets/config@3.1.4/schema.json",
   "changelog": "@changesets/cli/changelog",
   "commit": false,
-  "fixed": [],
+  "fixed": [
+    [
+      "@dylanlindgren/next-ui-storybook-connect",
+      "@dylanlindgren/next-ui-storybook-vite",
+      "@dylanlindgren/next-ui-storybook-addon"
+    ]
+  ],
   "linked": [],
-  "access": "restricted",
+  "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": []
