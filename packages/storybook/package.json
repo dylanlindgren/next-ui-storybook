@@ -1,0 +1,62 @@
+{
+  "name": "@dylanlindgren/next-ui-storybook-addon",
+  "version": "1.0.0",
+  "description": "Storybook addon for developing ServiceNow Next Experience UI Framework components.",
+  "keywords": [
+    "storybook-addons",
+    "preset",
+    "servicenow",
+    "next-experience",
+    "web-components",
+    "vite"
+  ],
+  "license": "MIT",
+  "author": "Dylan Lindgren",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanlindgren/next-ui-storybook.git",
+    "directory": "packages/storybook"
+  },
+  "bugs": {
+    "url": "https://github.com/dylanlindgren/next-ui-storybook/issues"
+  },
+  "homepage": "https://github.com/dylanlindgren/next-ui-storybook/tree/main/packages/storybook#readme",
+  "type": "module",
+  "exports": {
+    ".": "./preset.js",
+    "./preset": "./preset.js",
+    "./manager": "./manager.js",
+    "./preview": "./preview.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "preset.js",
+    "manager.js",
+    "preview.js",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@dylanlindgren/next-ui-storybook-connect": "workspace:^",
+    "@dylanlindgren/next-ui-storybook-vite": "workspace:^",
+    "@servicenow/cli": "^30.2.0",
+    "@storybook/icons": "^2.0.2"
+  },
+  "peerDependencies": {
+    "@storybook/web-components-vite": "catalog:storybook10",
+    "react": "catalog:",
+    "sass": "catalog:",
+    "storybook": "catalog:storybook10",
+    "vite": "catalog:"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  }
+}

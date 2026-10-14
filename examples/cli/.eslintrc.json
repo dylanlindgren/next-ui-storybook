@@ -1,0 +1,9 @@
+{
+ "extends": [
+  "plugin:@tectonic/tectonic/servicenow",
+  "plugin:storybook/recommended"
+ ],
+ "plugins": [
+  "@tectonic/tectonic"
+ ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@dylanlindgren/next-ui-storybook-example-cli",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Private Storybook example for ServiceNow Next Experience components.",
+  "readme": "./README.md",
+  "engines": {
+    "node": ">=22"
+  },
+  "module": "src/index.js",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@servicenow/sass-global": "latest",
+    "@servicenow/sass-kit": "latest",
+    "@servicenow/sass-generic": "latest"
+  },
+  "optionalDependencies": {
+    "@servicenow/now-accordion": "instance",
+    "@servicenow/now-button": "instance",
+    "@servicenow/now-card": "instance",
+    "@servicenow/ui-mega": "instance"
+  },
+  "devDependencies": {
+    "@babel/runtime": "7.25.7",
+    "@storybook/web-components-vite": "^10.6.2",
+    "@dylanlindgren/next-ui-storybook-addon": "workspace:^",
+    "ajv": "^6.12.6",
+    "eslint-plugin-storybook": "10.6.2",
+    "react": "^18.3.1",
+    "sass": "1.53.0",
+    "storybook": "^10.6.2",
+    "vite": "^7.3.6"
+  }
+}

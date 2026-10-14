@@ -1,0 +1,82 @@
+{
+  "components": {
+    "color-toggle": {
+      "innerComponents": [],
+      "properties": [
+        {
+          "name": "color1",
+          "label": "First Color",
+          "fieldType": "string",
+          "defaultValue": "red",
+          "description": "CSS color for the first button and initial background."
+        },
+        {
+          "name": "color2",
+          "label": "Second Color",
+          "fieldType": "string",
+          "defaultValue": "green",
+          "description": "CSS color for the second button."
+        },
+        {
+          "name": "color3",
+          "label": "Third Color",
+          "fieldType": "string",
+          "defaultValue": "blue",
+          "description": "CSS color for the third button."
+        }
+      ],
+      "actions": [
+        {
+          "name": "COLOR_TOGGLE#COLOR_SELECTED",
+          "label": "Color Selected",
+          "description": "Dispatched when a different color is selected.",
+          "payload": [
+            {
+              "name": "color",
+              "label": "Color",
+              "fieldType": "string",
+              "description": "The selected CSS color."
+            }
+          ]
+        }
+      ],
+      "uiBuilder": {
+        "associatedTypes": [
+          "global.core",
+          "global.landing-page"
+        ],
+        "label": "Color Toggle",
+        "tileIcon": "./tile-icon/generic-tile-icon.svg",
+        "description": "Three configurable color buttons and a large background preview.",
+        "category": "primitives"
+      }
+    },
+    "counter-card": {
+      "innerComponents": [],
+      "uiBuilder": {
+        "associatedTypes": [
+          "global.core",
+          "global.landing-page"
+        ],
+        "label": "Counter Card",
+        "tileIcon": "./tile-icon/generic-tile-icon.svg",
+        "description": "A card with a counter starting at 1 and an increment button.",
+        "category": "primitives"
+      }
+    },
+    "random-accordion": {
+      "innerComponents": [],
+      "uiBuilder": {
+        "associatedTypes": [
+          "global.core",
+          "global.landing-page"
+        ],
+        "label": "Random Accordion",
+        "tileIcon": "./tile-icon/generic-tile-icon.svg",
+        "description": "Ten number ranges from 1 to 100, each with three random-number cards.",
+        "category": "primitives"
+      }
+    }
+  },
+  "scopeName": "x_snc_dlsnuic"
+}

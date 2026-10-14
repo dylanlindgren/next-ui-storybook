@@ -1,0 +1,31 @@
+@import '@servicenow/sass-kit/host';
+
+:host {
+	display: block;
+	width: 320px;
+	max-width: 100%;
+}
+
+.counter-card {
+	display: block;
+}
+
+.counter-card__content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.counter-card__heading {
+	margin: 0;
+	font-size: 18px;
+}
+
+.counter-card__count {
+	font-size: 32px;
+	font-variant-numeric: tabular-nums;
+	line-height: 1.2;
+	overflow-wrap: anywhere;
+	max-width: 100%;
+}

@@ -1,0 +1,23 @@
+@import '@servicenow/sass-kit/host';
+
+:host {
+	display: block;
+}
+
+.color-toggle {
+	display: grid;
+	gap: 16px;
+	width: 100%;
+}
+
+.color-toggle__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.color-toggle__preview {
+	width: 100%;
+	min-height: 300px;
+	border-radius: 4px;
+}

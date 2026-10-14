@@ -1,0 +1,32 @@
+@import '@servicenow/sass-kit/host';
+
+:host {
+	display: block;
+	width: 100%;
+}
+
+.random-accordion {
+	display: block;
+}
+
+.random-accordion__cards {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 16px;
+}
+
+.random-accordion__number {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 80px;
+	font-size: 32px;
+	font-variant-numeric: tabular-nums;
+	line-height: 1.2;
+}
+
+@media (max-width: 480px) {
+	.random-accordion__cards {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}

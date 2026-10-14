@@ -1,0 +1,12 @@
+{
+  "development": {
+    "proxy": {
+      "origin": "http://localhost:8080",
+      "headers": {"Authorization": "Basic YWRtaW46YWRtaW4="},
+      "proxies": ["/api", "/amb"],
+      "timeout": 5000
+    },
+    "devServer": {"port": 8081}
+  },
+  "version": "19.1.0"
+}

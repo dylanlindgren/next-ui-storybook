@@ -1,0 +1,13 @@
+{
+  "name": "@dylanlindgren/next-ui-storybook-workspace",
+  "private": true,
+  "license": "MIT",
+  "author": "Dylan Lindgren",
+  "scripts": {
+    "test": "pnpm -r test",
+    "dev": "pnpm --filter ./examples/cli storybook"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^3.0.3"
+  }
+}

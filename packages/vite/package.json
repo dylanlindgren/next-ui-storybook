@@ -1,0 +1,55 @@
+{
+  "name": "@dylanlindgren/next-ui-storybook-vite",
+  "version": "1.0.0",
+  "description": "Vite plugins that compile ServiceNow Next Experience UI Framework components: snabbdom JSX transform, SCSS-as-string, and instance-module externals. Shared by the dev (Storybook) and build pipelines.",
+  "keywords": [
+    "servicenow",
+    "next-experience",
+    "vite",
+    "vite-plugin",
+    "web-components"
+  ],
+  "license": "MIT",
+  "author": "Dylan Lindgren",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanlindgren/next-ui-storybook.git",
+    "directory": "packages/vite"
+  },
+  "bugs": {
+    "url": "https://github.com/dylanlindgren/next-ui-storybook/issues"
+  },
+  "homepage": "https://github.com/dylanlindgren/next-ui-storybook/tree/main/packages/vite#readme",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "autoprefixer": "catalog:",
+    "cssnano": "^7.0.0",
+    "postcss": "catalog:",
+    "semver": "^7.0.0",
+    "yaml": "^2.0.0",
+    "sass": "catalog:"
+  },
+  "peerDependencies": {
+    "vite": "catalog:"
+  },
+  "scripts": {
+    "gen:mega-names": "node scripts/generate-mega-names.mjs",
+    "test": "node --test test/*.test.js"
+  }
+}

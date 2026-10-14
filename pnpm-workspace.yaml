@@ -1,0 +1,30 @@
+packages:
+  - 'packages/*'
+  - 'examples/*'
+
+catalog:
+  vite: ^7.0.0
+  sass: ^1.77.0
+  postcss: ^8.4.0
+  autoprefixer: ^10.4.0
+  react: ^18.3.0
+  react-dom: ^18.3.0
+
+catalogs:
+  storybook10:
+    storybook: ^10.0.0
+    '@storybook/web-components-vite': ^10.0.0
+
+overrides:
+  react: ^18.3.0
+  react-dom: ^18.3.0
+
+allowBuilds:
+  '@parcel/watcher': true
+  '@swc/core': true
+  core-js: true
+  core-js-pure: true
+  esbuild: true
+  libxmljs2: true
+  nx: true
+  sn-http-request: true

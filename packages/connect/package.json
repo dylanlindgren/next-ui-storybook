@@ -1,0 +1,43 @@
+{
+  "name": "@dylanlindgren/next-ui-storybook-connect",
+  "version": "1.0.0",
+  "description": "ServiceNow instance connection for next-ui-storybook tooling.",
+  "keywords": [
+    "servicenow",
+    "next-experience",
+    "snc",
+    "proxy",
+    "credentials"
+  ],
+  "license": "MIT",
+  "author": "Dylan Lindgren",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanlindgren/next-ui-storybook.git",
+    "directory": "packages/connect"
+  },
+  "bugs": {
+    "url": "https://github.com/dylanlindgren/next-ui-storybook/issues"
+  },
+  "homepage": "https://github.com/dylanlindgren/next-ui-storybook/tree/main/packages/connect#readme",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  }
+}
